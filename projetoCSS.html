@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea2ad24f7a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleProjeto.css">
+    <title>Rafael Molina</title>
+</head>
+<body>
+    <header>
+        <div>
+            <p>Rafael Molina</p>
+        </div>
+        <ul>
+            <li>
+                <a target="blank" href="https://github.com/rafgmol">github</a>
+            </li>
+            <li>
+                <a target="blank" href="mailto:rafg.molina@gmail.com">email</a>
+            </li>
+            <li>
+                <a target="blank" href="https://wa.me/11985433067">whatsapp</a>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Rafael Molina</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <!-- <div class="flex">
+                <div>
+                    <img src="./pexels-abednego-ago-238783.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sint?</p>
+                </div>
+                <div>
+                    <img src="./pexels-abednego-ago-238783.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sint?</p>
+                </div>
+                <div>
+                    <img src="./pexels-adrien-olichon-2387793.jpg" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, minus. Commodi recusandae molestiae ad minus?</p>
+                </div>
+                <div>
+                    <img src="./pexels-alex-conchillos-3648850.jpg" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam vero nihil earum ab libero voluptates quis molestiae 
+                        blanditiis animi iusto, eveniet est, mollitia provident cumque veritatis molestias aperiam et voluptatibus?</p>
+                </div>
+            </div> -->
+
+            <div style="display: none;" id="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eius laudantium excepturi voluptates culpa itaque, tempora 
+                    saepe omnis provident magnam nostrum rem earum odio iste deleniti, 
+                    architecto nihil deserunt, vel fuga!</p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+
+
+        </section>
+
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle("rotate");
+            var display = document.getElementById("about");
+            display.classList.toggle("active");
+        }
+    </script>
+    
+</body>
+</html>
